@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+</head>
+<body class="signIn">
+
+
+    <section id="signIn" class="w-100 h-100">
+        <div class="container d-flex justify-content-center align-items-center flex-column text-white my-5 p-4 rounded-4 text-center">
+            <h1>SignIn</h1>
+            <input id="signInEmail" oninput="validationSignInEmail()"  type="email" placeholder="Enter your email" class="form-control m-3">
+            <input id="signInPassword" oninput="validationSignInPassword()" type="password" placeholder="Enter your password" class="form-control m-3">
+            <div id="exist" class="d-none text-danger fw-bolder">Wrong password</div>
+            <div id="validSignIn" class="d-none text-danger fw-bolder">Your email or password is not valid</div>
+            <div id="signUpFirst" class="d-none text-danger fw-bolder">Wrong password or email</div>
+            <button id="signInBtn" class="btn btn-info form-control m-3">SignIn</button>
+            <div>Don’t have an account? <a href="signup.html">Sign Up</a></div>    
+        </div>    
+    </section>
+    <script src="Js/signin.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

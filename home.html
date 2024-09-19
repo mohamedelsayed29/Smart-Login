@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+</head>
+<body>
+    <section id="Welcome" class="d-flex align-items-center  my-5"> 
+        <div class="container text-center text-white rounded-5">
+            <span class="h1" id="demo"></span><br>
+            <button id="Logout" onclick="Logout()" class="btn btn-danger mt-4 fs-3">Logout</button>
+        </div>
+    </section>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/home.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>    
+         var typed = new Typed('#demo', {
+         strings: ["Welcome, "+localStorage.getItem('userName')],
+         typeSpeed: 100,
+         });
+     </script>
+ </body>
+</html>

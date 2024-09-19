@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+</head>
+<body class="signUp">
+
+    <section id="signUp">
+        <div class="container d-flex justify-content-center align-items-center flex-column text-white my-5 p-4 rounded-4 text-center">
+                <h1>SignUp</h1>
+                <input id="signupName" oninput="validationSignUpName()" type="text" placeholder="Enter your Name" class="form-control m-3">
+                <input id="signupEmail" oninput="validationSignUpEmail()"  type="email" placeholder="Enter your email" class="form-control m-3">
+                <div id="existEmail" class="d-none text-danger fw-bolder">This email is already exist , Enter new email.</div>
+                <input id="signupPassword" oninput="validationSignupPassword()" type="password" placeholder="Enter your password" class="form-control m-3">
+                <div id="validSignUp" class="d-none text-danger fw-bolder">Your email or password is not valid</div>
+                <div id="successful" class="d-none text-success fw-bolder">successful</div>
+                <button id="signUpBtn" class="btn btn-info form-control m-3">Login</button>
+                <div>You have an account? <a href="index.html">Sign In</a></div>
+        </div>    
+    </section>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/signout.js"></script>
+</body>
+</html>

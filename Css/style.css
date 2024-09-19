@@ -1,0 +1,40 @@
+body{
+    background-image: url(../img/360_F_240635575_EJifwRAbKsVTDnA3QE0bCsWG5TLhUNEZ.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#signUp .container{
+    width: 50%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(42,98,128,1) 58%);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#signIn .container{
+    width: 50%;
+    background: linear-gradient(10deg, rgba(0,0,0,1) 20%, rgba(42,98,128,1) 58%);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+#Welcome .container{
+    padding: 50px;
+    width: 50%;
+    border:solid 2px white; 
+    background-color: rgba(0,0,0,0.7);   
+}
+@media screen and (max-width: 1020px) {
+    #Welcome .container {
+        width: 100%;
+    }
+    #signUp .container{
+        width: 100%;
+    }
+    #signIn .container{
+        width: 100%;
+    }
+}
+.btn-info {
+    --bs-btn-color: #31d2f2 !important;
+    --bs-btn-bg: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(42,98,128,1) 58%) !important;
+}
